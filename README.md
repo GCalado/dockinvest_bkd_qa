@@ -28,7 +28,7 @@ Este projeto visa garantir a qualidade e a confiabilidade do Dock Invest, automa
 - **[pytest-html](https://pytest-html.readthedocs.io/en/latest/)**  
   Plugin para geração de relatórios de testes em HTML.
 
-- <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original.svg" alt="AWS" width="22"/> **[AWS](https://aws.amazon.com/pt/documentation/)**  
+- <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/2560px-Amazon_Web_Services_Logo.svg.png" alt="AWS" width="22"/> **[AWS](https://aws.amazon.com/pt/documentation/)**  
   Serviços de nuvem utilizados para infraestrutura e integrações.
 
 - <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL" width="22"/> **[PostgreSQL](https://www.postgresql.org/docs/)**  
