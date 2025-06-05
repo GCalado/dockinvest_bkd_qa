@@ -22,10 +22,10 @@ Este projeto visa garantir a qualidade e a confiabilidade do Dock Invest, automa
 - <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytest/pytest-original.svg" alt="Pytest" width="22"/> **[Pytest](https://docs.pytest.org/en/stable/)**  
   Framework para execução dos testes automatizados.
 
-- <img src="_static/requests-sidebar.png" alt="Requests" width="22" style="background:white; border-radius:3px;"/> **[Requests](https://docs.python-requests.org/en/latest/)**  
+- **[Requests](https://docs.python-requests.org/en/latest/)**  
   Biblioteca para requisições HTTP, utilizada para testar APIs.
 
-- <img src="https://pypi-camo.freetls.fastly.net/c29f3ca2f56e39a8adf88da117ea03579f2eb439/68747470733a2f2f692e696d6775722e636f6d2f3454596961356a2e706e67" alt="pytest-html" width="22"/> **[pytest-html](https://pytest-html.readthedocs.io/en/latest/)**  
+- **[pytest-html](https://pytest-html.readthedocs.io/en/latest/)**  
   Plugin para geração de relatórios de testes em HTML.
 
 ---
