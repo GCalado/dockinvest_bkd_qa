@@ -35,7 +35,7 @@ Este projeto visa garantir a qualidade e a confiabilidade do Dock Invest, automa
 ### 1. Clone o repositório
 
 ```bash
-git clone https://github.com/seu-usuario/dockinvest_bkd_qa.git
+git clone git@github.com:{Seu username}/dockinvest_bkd_qa.git
 cd dockinvest_bkd_qa
 ```
 
