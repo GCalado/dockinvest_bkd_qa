@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="https://files.readme.io/f29a06b-small-210823.Dock.Logo.REFINADO.RGB_Azul.png" alt="Dock Logo" width="200"/>
+</p>
+
 # 🚀 Dock Invest - Testes Funcionais Automatizados
 
 Este repositório contém o projeto de **testes funcionais automatizados** para o produto **Dock Invest**.
@@ -12,21 +16,20 @@ Este projeto visa garantir a qualidade e a confiabilidade do Dock Invest, automa
 
 ## 🛠️ Tecnologias Utilizadas
 
-- **Python**  
-  Linguagem principal do projeto.  
-  [Documentação](https://docs.python.org/3/)
+- <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" width="22"/> **[Python](https://docs.python.org/3/)**  
+  Linguagem principal do projeto.
 
-- **Pytest**  
-  Framework para execução dos testes automatizados.  
-  [Documentação](https://docs.pytest.org/en/stable/)
+- <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytest/pytest-original.svg" alt="Pytest" width="22"/> **[Pytest](https://docs.pytest.org/en/stable/)**  
+  Framework para execução dos testes automatizados.
 
-- **Requests**  
-  Biblioteca para requisições HTTP, utilizada para testar APIs.  
-  [Documentação](https://docs.python-requests.org/en/latest/)
+- <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/requests.svg" alt="Requests" width="22" style="background:white; border-radius:3px;"/> **[Requests](https://docs.python-requests.org/en/latest/)**  
+  Biblioteca para requisições HTTP, utilizada para testar APIs.
 
-- **pytest-html**  
-  Plugin para geração de relatórios de testes em HTML.  
-  [Documentação](https://pytest-html.readthedocs.io/en/latest/)
+- <img src="https://raw.githubusercontent.com/pytest-dev/pytest-html/main/docs/_static/logo.png" alt="pytest-html" width="22"/> **[pytest-html](https://pytest-html.readthedocs.io/en/latest/)**  
+  Plugin para geração de relatórios de testes em HTML.
+
+- <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker" width="22"/> **[Docker](https://docs.docker.com/)** (opcional)  
+  Para execução dos testes em ambientes isolados.
 
 ---
 
@@ -86,7 +89,7 @@ dockinvest_bkd_qa/
 
 ## 📄 Referências
 
-- [Dock Invest](https://dock.tech/)
+- [Dock Invest](https://developers.dock.tech/docs/remunera%C3%A7%C3%A3o-de-saldo-dock)
 - [Python](https://docs.python.org/3/)
 - [Pytest](https://docs.pytest.org/en/stable/)
 - [Requests](https://docs.python-requests.org/en/latest/)
