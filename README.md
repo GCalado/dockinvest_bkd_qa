@@ -1,0 +1,100 @@
+# 🚀 Dock Invest - Testes Funcionais Automatizados
+
+Este repositório contém o projeto de **testes funcionais automatizados** para o produto **Dock Invest**.
+
+## 📝 Sobre o Projeto
+
+Dock Invest é a funcionalidade de **Remuneração de Saldo** que permite que clientes Dock (emissores) ofereçam rendimento sobre os saldos mantidos nas contas digitais de seus usuários finais. Os fundos depositados nessas contas podem ser aplicados pela Dock em títulos públicos federais, gerando receita que pode ser compartilhada conforme o modelo de negócio acordado.
+
+Este projeto visa garantir a qualidade e a confiabilidade do Dock Invest, automatizando cenários de testes funcionais críticos para o negócio.
+
+---
+
+## 🛠️ Tecnologias Utilizadas
+
+- **Python**  
+  Linguagem principal do projeto.  
+  [Documentação](https://docs.python.org/3/)
+
+- **Pytest**  
+  Framework para execução dos testes automatizados.  
+  [Documentação](https://docs.pytest.org/en/stable/)
+
+- **Requests**  
+  Biblioteca para requisições HTTP, utilizada para testar APIs.  
+  [Documentação](https://docs.python-requests.org/en/latest/)
+
+- **pytest-html**  
+  Plugin para geração de relatórios de testes em HTML.  
+  [Documentação](https://pytest-html.readthedocs.io/en/latest/)
+
+---
+
+## 💻 Como baixar e executar o projeto
+
+### 1. Clone o repositório
+
+```bash
+git clone https://github.com/seu-usuario/dockinvest_bkd_qa.git
+cd dockinvest_bkd_qa
+```
+
+### 2. Crie um ambiente virtual
+
+```bash
+python3 -m venv venv
+source venv/bin/activate
+```
+
+### 3. Instale as dependências
+
+```bash
+pip install -r requirements.txt
+```
+
+### 4. Configure variáveis de ambiente (se necessário)
+
+Crie um arquivo `.env` com as configurações necessárias para execução dos testes.
+
+### 5. Execute os testes
+
+```bash
+pytest
+```
+
+Para gerar um relatório em HTML:
+
+```bash
+pytest --html=report.html
+```
+
+---
+
+## 📂 Estrutura do Projeto
+
+```
+dockinvest_bkd_qa/
+│
+├── src/                # Código-fonte dos testes
+├── tests/              # Casos de teste automatizados
+├── requirements.txt    # Dependências do projeto
+├── README.md           # Este arquivo
+└── ...
+```
+
+---
+
+## 📄 Referências
+
+- [Dock Invest](https://dock.tech/)
+- [Python](https://docs.python.org/3/)
+- [Pytest](https://docs.pytest.org/en/stable/)
+- [Requests](https://docs.python-requests.org/en/latest/)
+- [pytest-html](https://pytest-html.readthedocs.io/en/latest/)
+- [Docker](https://docs.docker.com/)
+
+---
+
+## 🤝 Contribuição
+
+Contribuições são bem-vindas! Sinta-se à vontade para abrir issues ou enviar pull requests.
