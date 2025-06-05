@@ -28,6 +28,12 @@ Este projeto visa garantir a qualidade e a confiabilidade do Dock Invest, automa
 - **[pytest-html](https://pytest-html.readthedocs.io/en/latest/)**  
   Plugin para geração de relatórios de testes em HTML.
 
+- <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original.svg" alt="AWS" width="22"/> **[AWS](https://aws.amazon.com/pt/documentation/)**  
+  Serviços de nuvem utilizados para infraestrutura e integrações.
+
+- <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL" width="22"/> **[PostgreSQL](https://www.postgresql.org/docs/)**  
+  Banco de dados relacional utilizado no projeto.
+
 ---
 
 ## 💻 Como baixar e executar o projeto
@@ -91,7 +97,8 @@ dockinvest_bkd_qa/
 - [Pytest](https://docs.pytest.org/en/stable/)
 - [Requests](https://docs.python-requests.org/en/latest/)
 - [pytest-html](https://pytest-html.readthedocs.io/en/latest/)
-- [Docker](https://docs.docker.com/)
+- [AWS](https://aws.amazon.com/pt/documentation/)
+- [PostgreSQL](https://www.postgresql.org/docs/)
 
 ---
 
