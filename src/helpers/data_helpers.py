@@ -14,7 +14,7 @@ def search_data(keys, data):
     return data
 
 def load_data(keys):
-    data = load_yaml_data(f"tests/data/{os.environ['ENVIRONMENT']}.yaml")
+    data = load_yaml_data(f"tests/data/{os.environ['env']}.yaml")
     if data is None:
         data = load_yaml_data("tests/data/standard.yaml")
     result = search_data(keys, data)

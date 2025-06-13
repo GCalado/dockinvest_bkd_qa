@@ -52,10 +52,12 @@ def aws_session(exec_env):
         region_name=region_name
     )
 
-    urls_secret = json.loads(get_secret_value(assumed_session, "automation_QA_uris"))
-    db_secret = json.loads(get_secret_value(assumed_session, "automation_QA_db_access"))
+    return assumed_session
+
+@pytest.fixture(scope="session", autouse=True)
+def set_env_vars(aws_session, exec_env):
+    urls_secret = json.loads(get_secret_value(aws_session, "automation_QA_uris"))
+    db_secret = json.loads(get_secret_value(aws_session, "automation_QA_db_access"))
     os.environ.update(urls_secret)
     os.environ.update(db_secret)
-    os.environ['ENVIRONMENT'] = exec_env
-
-    return assumed_session
+    os.environ['env'] = exec_env
