@@ -69,7 +69,7 @@ def test_validate_same_history_size_in_database_and_api():
         pytest.param("calendarId", 115, 422, "detailed_error", id="calendarId_number"),
         pytest.param("calendarId", None, 422, "detailed_error", id="calendarId_null"),
         pytest.param("issuerAccountBonification", False, 422, "detailed_error", id="issuerAccountBonification_boolean"),
-        pytest.param("issuerAccountBonification", 103, 422, "detailed_error", id="issuerAccountBonification_boolean"),
+        pytest.param("issuerAccountBonification", 103, 422, "detailed_error", id="issuerAccountBonification_number"),
         pytest.param("issuerAccountBonification", None, 422, "detailed_error", id="issuerAccountBonification_null"),
     ]
 )
