@@ -4,6 +4,7 @@ import pytest
 from src.helpers.data_helpers import *
 from src.helpers.db_helpers import *
 from src.helpers.api_helpers import *
+from src.mocks.create_issuer_setup_mock import create_issuer_setup_payload
 from src.helpers.aws_helpers import get_secret_value
 from jsonschema import validate
 from jsonschema.exceptions import ValidationError
@@ -66,4 +67,17 @@ def select_one_valid_issuer_setup():
   query = f"{operation} {table_name} {condition}"
   print(f"Executing query: {query}")
   result = run_postgres_select(db_credentials, query)
-  return result[0]
+  return result[0][0]
+
+def validate_error_duplicated_issuer_setup(issuer_setup_infos):
+    issuer_setup_payload = create_issuer_setup_payload()
+    issuer_setup_payload["issuerId"] = issuer_setup_infos["issuer_id_pk"]
+    issuer_setup_payload["productId"] = issuer_setup_infos["product_id_pk"]
+    issuer_setup_payload["balanceTypeConfigId"] = issuer_setup_infos["balance_type_config_id_pk"]
+    response = post_create_issuer_setup(issuer_setup_payload)
+    assert response.status_code == 409, f"Expected status code 409, got {response.status_code}"
+    response_body = response.json()
+    print(f"ResponseBody: \n{json.dumps(response_body, indent=4)}")
+    validate_contract(response_body, "undetailed_error")
+    assert response_body['title'] == "Issuer already exists"
+    assert response_body['message'] == "Issuer ID already exists"

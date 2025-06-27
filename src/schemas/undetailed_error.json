@@ -2,7 +2,9 @@
     "type": "object",
     "properties": {
         "title": { "type": "string" },
-        "message": { "type": "string" }
+        "message": { "type": "string" },
+        "errorType": { "type": "number" },
+        "errorCode": { "type": "number" }
     },
     "required": ["title", "message"]
 }

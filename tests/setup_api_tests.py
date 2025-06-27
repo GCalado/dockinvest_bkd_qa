@@ -84,5 +84,5 @@ def test_validate_negative_scenarios_post(key, value, expected_status, expected_
     validate_contract(response_body, expected_contract)
 
 def test_validate_error_issuer_already_exists():
-    issuer_payload = select_one_valid_issuer_setup()
-    print(f"aaaaaaaaaaaaaaaaaaa\n{issuer_payload[0]}")
+    issuer_setup_infos = select_one_valid_issuer_setup()
+    validate_error_duplicated_issuer_setup(issuer_setup_infos)
