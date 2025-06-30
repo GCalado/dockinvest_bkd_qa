@@ -50,7 +50,9 @@ def get_issuer_history_total(client_id, product_id, balance_type_config_id=None)
 def get_total_history_size(client_id, product_id, balance_type_config_id=None):
     balance_type_config_id = "1234" if balance_type_config_id is None else balance_type_config_id
     issuer_history = get_issuer_history(client_id, product_id, balance_type_config_id)
-    return len(issuer_history['results'])
+    assert issuer_history.status_code == 200
+    response_body = issuer_history.json()
+    return len(response_body['results'])
 
 def validate_contract(response_body, expected_contract):
     schema = load_contract(f"{expected_contract}.json")
